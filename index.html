@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- <link rel="stylesheet" href="css/chouti.css"> -->
+	<title>抽屉效果</title>
+	<style>
+	.ctboxs {
+	width: 520px; /*标题宽*4+内容宽 60*4+520*/
+	height: 418px;
+	position: relative;
+	overflow: hidden;
+	border: 5px solid orange;
+}
+	.ctboxs .ctbox {
+	width: 520px;
+  height: px;
+	position: absolute;
+	top: px;
+	transition: 2s linear;
+}
+.ctboxs .ct1 {
+  top:0;
+}
+.ctboxs .ct2 {
+  top:316px;
+}
+.ctboxs .ct3 {
+	top:352px;
+}
+.ctboxs .ct4 {
+	top:384px;
+}
+.ctboxs .ctbox .title {
+	font-size: 22px;
+	/*padding: 30px 19px 0; /*字号+左右padding=标题宽 22+19+19=60*/
+	line-height: 36px;
+	color: white;
+	cursor: pointer;
+}
+.ctboxs .ct1 .title {
+	background: rgb(0,0,125);
+}
+.ctboxs .ct2 .title {
+	background: rgb(2,2,500);
+}
+.ctboxs .ct3 .title {
+	background: rgb(0,0,300);
+}
+.ctboxs .ct4 .title {
+	background: rgb(6,6,200);
+}
+	</style>
+</head>
+<body>
+	<div id="ct1" class="ctboxs">
+		<div class="ctbox ct1">
+			<div class="title">交通行业</div>
+			<div class="content">
+				<img src="images/1.jpg" alt="1">
+			</div>
+		</div>
+		<div class="ctbox ct2">
+			<div class="title">司法行业</div>
+			<div class="content">
+				<img src="images/2.jpg" alt="2">
+			</div>
+		</div>
+		<div class="ctbox ct3">
+			<div class="title">政府相关行业</div>
+			<div class="content">
+				<img src="images/3.jpg" alt="3">
+			</div>
+		</div>
+		<div class="ctbox ct4">
+			<div class="title">其他行业</div>
+			<div class="content">
+				<img src="images/4.jpg" alt="4">
+			</div>
+		</div>
+	</div>
+	<script src="js/chouti.js"></script>
+</body>
+</html>
